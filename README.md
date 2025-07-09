@@ -12,7 +12,7 @@ This is an end-to-end automation test framework for the **Deezer web application
 
 ---
 
-## 📁 Project Structure
+
 
 ## 📁 Project Structure
 
