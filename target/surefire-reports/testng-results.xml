@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="14" passed="9" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-09T20:08:00 EEST" name="Surefire suite" finished-at="2025-07-09T20:12:58 EEST" duration-ms="297790">
+    <groups>
+    </groups>
+    <test started-at="2025-07-09T20:08:00 EEST" name="Surefire test" finished-at="2025-07-09T20:12:58 EEST" duration-ms="297790">
+      <class name="FavouirtiesTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:FavouirtiesTest@f78a47e]" started-at="2025-07-09T20:08:00 EEST" name="setUp" finished-at="2025-07-09T20:08:03 EEST" duration-ms="3408" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFavoritesPageLoads()[pri:0, instance:FavouirtiesTest@f78a47e]" started-at="2025-07-09T20:08:04 EEST" name="testFavoritesPageLoads" finished-at="2025-07-09T20:08:59 EEST" duration-ms="55764" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64606/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da258f5451e958be268b59612b8c8a08]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64606}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64606/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: da258f5451e958be268b59612b8c8a08
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WebActions.waitForVisibility(WebActions.java:47)
+at pages.OffersPage.<init>(OffersPage.java:14)
+at pages.LoginPage.EmailLogin(LoginPage.java:33)
+at FavouirtiesTest.initFavoritesPage(FavouirtiesTest.java:26)
+at FavouirtiesTest.testFavoritesPageLoads(FavouirtiesTest.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFavoritesPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:FavouirtiesTest@f78a47e]" started-at="2025-07-09T20:08:59 EEST" name="tearDown" finished-at="2025-07-09T20:09:00 EEST" duration-ms="198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- FavouirtiesTest -->
+      <class name="OffersTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:OffersTest@4c60d6e9]" started-at="2025-07-09T20:11:52 EEST" name="setUp" finished-at="2025-07-09T20:11:55 EEST" duration-ms="2810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOffersPageLoads()[pri:0, instance:OffersTest@4c60d6e9]" started-at="2025-07-09T20:11:55 EEST" name="testOffersPageLoads" finished-at="2025-07-09T20:12:51 EEST" duration-ms="56103" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65045/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e844f3c332b4a22c30f09768933fbbd]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:65045}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:65045/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1e844f3c332b4a22c30f09768933fbbd
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WebActions.waitForVisibility(WebActions.java:47)
+at pages.OffersPage.<init>(OffersPage.java:14)
+at pages.LoginPage.EmailLogin(LoginPage.java:33)
+at OffersTest.testOffersPageLoads(OffersTest.java:23)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOffersPageLoads -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:OffersTest@4c60d6e9]" started-at="2025-07-09T20:12:51 EEST" name="tearDown" finished-at="2025-07-09T20:12:51 EEST" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- OffersTest -->
+      <class name="LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:36 EEST" name="setUp" finished-at="2025-07-09T20:10:39 EEST" duration-ms="2766" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:39 EEST" name="testInvalidLogin" finished-at="2025-07-09T20:10:45 EEST" duration-ms="5747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:45 EEST" name="tearDown" finished-at="2025-07-09T20:10:45 EEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:45 EEST" name="setUp" finished-at="2025-07-09T20:10:48 EEST" duration-ms="2947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginWithEmptyFields()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:48 EEST" name="testLoginWithEmptyFields" finished-at="2025-07-09T20:10:53 EEST" duration-ms="5351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginWithEmptyFields -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:53 EEST" name="tearDown" finished-at="2025-07-09T20:10:53 EEST" duration-ms="201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:53 EEST" name="setUp" finished-at="2025-07-09T20:10:56 EEST" duration-ms="2510" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSuccessfulLogin()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:10:56 EEST" name="testSuccessfulLogin" finished-at="2025-07-09T20:11:52 EEST" duration-ms="55636" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64976}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64976/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11ee308235574d897e747c7fd120651d]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.id: open-account (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64976}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64976/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 11ee308235574d897e747c7fd120651d
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WebActions.waitForVisibility(WebActions.java:47)
+at pages.OffersPage.<init>(OffersPage.java:14)
+at pages.LoginPage.EmailLogin(LoginPage.java:33)
+at LoginTest.testSuccessfulLogin(LoginTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSuccessfulLogin -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:LoginTest@196a42c3]" started-at="2025-07-09T20:11:52 EEST" name="tearDown" finished-at="2025-07-09T20:11:52 EEST" duration-ms="237" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- LoginTest -->
+      <class name="HomeTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:00 EEST" name="setUp" finished-at="2025-07-09T20:09:02 EEST" duration-ms="2959" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="initializeHomePage()[pri:0, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:02 EEST" name="initializeHomePage" finished-at="2025-07-09T20:09:34 EEST" duration-ms="31148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeHomePage -->
+        <test-method signature="testNavigation_Home_Button()[pri:1, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:34 EEST" name="testNavigation_Home_Button" finished-at="2025-07-09T20:09:35 EEST" duration-ms="1458" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Should be on home page after clicking home button expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Should be on home page after clicking home button expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at HomeTest.testNavigation_Home_Button(HomeTest.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigation_Home_Button -->
+        <test-method signature="testMusicPlayAndPause()[pri:2, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:35 EEST" name="testMusicPlayAndPause" finished-at="2025-07-09T20:09:42 EEST" duration-ms="6704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMusicPlayAndPause -->
+        <test-method signature="testNavigation_Favorite_Button()[pri:3, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:42 EEST" name="testNavigation_Favorite_Button" finished-at="2025-07-09T20:09:43 EEST" duration-ms="964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigation_Favorite_Button -->
+        <test-method signature="testNavigation_Explore_Button()[pri:4, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:43 EEST" name="testNavigation_Explore_Button" finished-at="2025-07-09T20:09:43 EEST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNavigation_Explore_Button -->
+        <test-method signature="testSearchTracks_ByArtist()[pri:5, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:43 EEST" name="testSearchTracks_ByArtist" finished-at="2025-07-09T20:09:44 EEST" duration-ms="1460" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTracks_ByArtist -->
+        <test-method signature="testSearchTracks_ByTrack()[pri:6, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:44 EEST" name="testSearchTracks_ByTrack" finished-at="2025-07-09T20:09:45 EEST" duration-ms="340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchTracks_ByTrack -->
+        <test-method signature="testMusicPlayControl()[pri:7, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:09:45 EEST" name="testMusicPlayControl" finished-at="2025-07-09T20:10:35 EEST" duration-ms="50464" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: By.cssSelector: div[class='css-z18i2b'] button[aria-label='Play']  (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64683/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8162d983d6393748d3beca210c2e90ac]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.cssSelector: div[class='css-z18i2b'] button[aria-label='Play']  (tried for 50 second(s) with 500 milliseconds interval)
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\Kimo\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64683}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64683/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8162d983d6393748d3beca210c2e90ac
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at utils.WebActions.waitForClickable(WebActions.java:81)
+at pages.HomePage.playTrack(HomePage.java:77)
+at HomeTest.testMusicPlayControl(HomeTest.java:108)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
+at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMusicPlayControl -->
+        <test-method signature="testCreatePlaylistButton()[pri:8, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:10:35 EEST" name="testCreatePlaylistButton" finished-at="2025-07-09T20:10:36 EEST" duration-ms="725" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreatePlaylistButton -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:HomeTest@79e4c792]" started-at="2025-07-09T20:10:36 EEST" name="tearDown" finished-at="2025-07-09T20:10:36 EEST" duration-ms="280" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- HomeTest -->
+      <class name="SignUpTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:SignUpTest@15043a2f]" started-at="2025-07-09T20:12:51 EEST" name="setUp" finished-at="2025-07-09T20:12:54 EEST" duration-ms="2694" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testSignupSuccessfull()[pri:0, instance:SignUpTest@15043a2f]" started-at="2025-07-09T20:12:54 EEST" name="testSignupSuccessfull" finished-at="2025-07-09T20:12:58 EEST" duration-ms="3931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSignupSuccessfull -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:SignUpTest@15043a2f]" started-at="2025-07-09T20:12:58 EEST" name="tearDown" finished-at="2025-07-09T20:12:58 EEST" duration-ms="191" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SignUpTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

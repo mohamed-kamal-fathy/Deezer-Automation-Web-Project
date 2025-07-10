@@ -1,0 +1,17 @@
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"/>
+    <test name="Login Tests">
+        <classes>
+            <class name="SignUpTest"/>
+            <class name="LoginTest"/>
+            <class name="OffersTest"/>
+            <class name="FavouirtiesTest"/>
+            <class name="HomeTest">
+                <methods>
+                    <include name="testNavigation_Explore_Button"/>
+                    <include name="testSearchTracks_ByArtist"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

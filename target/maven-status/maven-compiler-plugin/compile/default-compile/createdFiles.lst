@@ -1,0 +1,14 @@
+pages\BasePage.class
+pages\SearchResultPage.class
+pages\OffersPage.class
+pages\LoginPage.class
+pages\FavouriteTracks.class
+pages\HomePage.class
+config\Config.class
+pages\StartPage.class
+utils\Log.class
+pages\SignUpPage.class
+utils\WebDriverManager.class
+utils\ScreenshotUtils.class
+utils\WebActions.class
+pages\FavouirtiesPage.class
