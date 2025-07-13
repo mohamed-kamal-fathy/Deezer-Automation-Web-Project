@@ -1,17 +1,14 @@
-# Deezer-Automation-Web-Project
-**Deezer Web Automation**  
- ✅ Java + Selenium + TestNG framework  
- 📊 Tests login, signup, favorites &amp; offers  
- 🚀 POM design with Allure reporting   
-⚡ Maven project ready for CI/CD  
- 🔧 Utilities: Screenshots, logging, WebActions
+# Deezer Automation Testing Project
+**This is an end-to-end automation test framework for the Real World **Deezer web application**, implemented using **Java**, **Selenium WebDriver**, **TestNG**, and **Allure Reporting**. The project follows the **Page Object Model (POM)** design pattern and includes logging, screenshots, and test configuration via properties files.**  
 
-# 🎧 Deezer Automation Testing Project
-
-This is an end-to-end automation test framework for the **Deezer web application**, implemented using **Java**, **Selenium WebDriver**, **TestNG**, and **Allure Reporting**. The project follows the **Page Object Model (POM)** design pattern and includes logging, screenshots, and test configuration via properties files.
-
----
-
+ ## 🚀 Technologies Used
+ 
+- **Selenium WebDriver**
+- **TestNG**
+- **Maven**
+- **Allure Reports**
+- **Log4j**
+- **Apache POI** (for Excel/JSON handling)
 
 
 ## 📁 Project Structure
@@ -70,32 +67,27 @@ DeezerProject/
 - Page Object Model (POM) design pattern
 - Utilities for logging, screenshots, and browser management
 
-## 📦 Usage
 
-```bash
-mvn clean test
-allure serve allure-results
+## ⚠️ Challenges Faced
 
-## Challenges Faced
+| **Challenge**                        | **Cause**                            | **Solution**                                                                                                                                                  
+|--------------------------------------|--------------------------------------|------------------------------------------------------------------------|
+| **Authentication Challenges**        | CAPTCHA enforced after login         | Reuse session cookies, avoid repeated logins, or do manual login and inject cookies     
+| **Dynamic and Changing UI**          | Frequent UI updates                  | Use stable locators (e.g., `data-*`, visible text), and apply Page Object Model (POM)   
+| **Performance & Loading Delays**     | Lazy-loaded content                  | Use Explicit Waits + scroll with JavaScript to ensure full content loads before testing  
+| **Test Data Management**             | Shared test account                  | Use separate accounts or reset state before each test using UI/API                      
+| **Maintaining Test Independence**    | Test dependencies                    | Design isolated tests with proper setup and teardown methods                            
+| **Flaky Tests**                      | Timing & async behavior              | Apply smart waits (WebDriverWait), use retry logic, and run in stable environments      
 
-- Authentication Challenges > enforce CAPTCHAs after login 
-- Dynamic and Changing UI > Locators frequently change, requiring constant updates to selectors.
-- Performance & Loading Delays > Songs, playlists, and content load via lazy-loading 
-- Test Data Management > Avoiding test pollution when using the same account for all tests.
-- Maintaining Test Independence > Tests may fail if they rely on previous tests
-- Flaky Tests > Timing issues, internet latency, and async events can cause inconsistent results.
-- 
 
 ## Prerequisites
 - Java JDK 8 or higher
 - Maven 3.6.0 or higher
 - Chrome/Firefox browser (depending on your WebDriver configuration)
 
-## 🚀 Technologies Used
 
-- **Selenium WebDriver**
-- **TestNG**
-- **Maven**
-- **Allure Reports**
-- **Log4j **
-- **Apache POI ** (for Excel/JSON handling)
+## 📦 Usage
+
+```bash
+mvn clean test
+allure serve allure-results
