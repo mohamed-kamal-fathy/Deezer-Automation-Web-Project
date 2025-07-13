@@ -76,12 +76,26 @@ DeezerProject/
 mvn clean test
 allure serve allure-results
 
+## Challenges Faced
 
+- Authentication Challenges > enforce CAPTCHAs after login 
+- Dynamic and Changing UI > Locators frequently change, requiring constant updates to selectors.
+- Performance & Loading Delays > Songs, playlists, and content load via lazy-loading 
+- Test Data Management > Avoiding test pollution when using the same account for all tests.
+- Maintaining Test Independence > Tests may fail if they rely on previous tests
+- Flaky Tests > Timing issues, internet latency, and async events can cause inconsistent results.
+- 
 
 ## Prerequisites
 - Java JDK 8 or higher
 - Maven 3.6.0 or higher
 - Chrome/Firefox browser (depending on your WebDriver configuration)
 
+## 🚀 Technologies Used
 
-
+- **Selenium WebDriver**
+- **TestNG**
+- **Maven**
+- **Allure Reports**
+- **Log4j **
+- **Apache POI ** (for Excel/JSON handling)
