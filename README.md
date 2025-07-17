@@ -1,5 +1,5 @@
 # Real World Deezer web Automation Project
-**This is an end-to-end automation test framework for the Real World **Deezer web application**, implemented using **Java**, **Selenium WebDriver**, **TestNG**, and **Allure Reporting**. The project follows the **Page Object Model (POM)** design pattern and includes logging, screenshots, and test configuration via properties files.**  
+**End-to-end automation test framework for the Real World **Deezer web application**, implemented using **Java**, **Selenium WebDriver**, **TestNG**, and **Allure Reporting**. The project follows the **Page Object Model (POM)** design pattern and includes logging, screenshots, and test configuration via properties files.**  
 
  ## 🚀 Technologies Used
  
